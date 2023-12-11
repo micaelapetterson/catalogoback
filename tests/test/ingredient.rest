@@ -1,0 +1,29 @@
+GET http://127.0.0.1:8000/api/ingredient
+
+### guardar ingredient
+
+POST http://127.0.0.1:8000/api/ingredient
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Tomate",
+    "price": 1
+}
+
+### mostrar ingredient
+
+GET http://127.0.0.1:8000/api/ingredient/4
+
+### modificar
+PUT http://127.0.0.1:8000/api/ingredient/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Queso Muzzarella",
+    "price": 3
+}
+
+### eliminar
+DELETE http://127.0.0.1:8000/api/ingredient/1

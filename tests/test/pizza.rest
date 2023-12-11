@@ -1,0 +1,18 @@
+### listar pedidos
+GET http://127.0.0.1:8000/api/pizza
+
+### Guardar pedido
+POST http://127.0.0.1:8000/api/pizza
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "NN",
+    "ingredients": [
+        {"ingredient_id": 1},
+        {"ingredient_id": 2}
+    ]
+}
+
+### eliminar
+DELETE http://127.0.0.1:8000/api/pizza/5
